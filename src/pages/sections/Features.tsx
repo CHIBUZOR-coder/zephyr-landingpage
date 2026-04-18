@@ -47,7 +47,7 @@ export const Features = () => {
               className=' bg-center bg-cover h-[20px] w-[20px]  flex justify-center items-center'
             ></span>
 
-            <span className='text-[#94A3B8]'>
+            <span className='text-[#94A3B8] text-[13px]'>
               Fee logic is executed by Zephyr core smart contracts and cannot be
               bypassed.
             </span>
