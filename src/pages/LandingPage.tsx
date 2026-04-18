@@ -14,8 +14,9 @@ export default function LandingPage () {
         <div className='header flex justify-between items-center px-4 py-3'>
           <div className='flex items-center gap-3'>
             <span
+            className='bg-center bg-cover h-22 w-22'
               style={{
-                backgroundImage: `url("/images/zeflogo.png") bg-center bg-cover h-22 w-22`
+                backgroundImage: `url("/images/zeflogo.png") `
               }}
             ></span>
 
