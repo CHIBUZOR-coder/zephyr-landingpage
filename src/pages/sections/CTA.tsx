@@ -9,7 +9,7 @@ export const CTA = () => {
           className='relative rounded-2xl px-10 py-16 text-center overflow-hidden'
           style={{
             background:
-              'linear-gradient(135deg, #155157 0%, #21a194 10%, #00E0B8 65%, #00ebb8 100%)'
+              'linear-gradient(135deg, #155157 0%, #155157 10%, #00E0B8 65%, #00ebb8 100%)'
           }}
         >
           {/* Subtle radial overlay for depth */}
