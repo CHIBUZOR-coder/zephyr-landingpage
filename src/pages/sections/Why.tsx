@@ -7,7 +7,7 @@ export const Why = () => {
         <div className='grid sm:grid-cols-2 gap-12 items-center max-w-[900px] mx-auto'>
           {/* ── Left: heading + feature list ── */}
           <div>
-            <h2 className='text-white text-3xl sm:text-4xl font-[900] text-[38px] mb-10'>
+            <h2 className='text-white text-[24px]  lg:text-[28px] sm:text-4xl font-[900]  mb-10'>
               Why Traders Trust Zephyr
             </h2>
 

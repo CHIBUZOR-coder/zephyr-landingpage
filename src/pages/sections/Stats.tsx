@@ -57,7 +57,7 @@ export const Stats = () => {
         <p className='text-[#00A991] text-xs font-semibold tracking-widest text-center uppercase mb-3'>
           The Zephyr Process
         </p>
-        <h2 className='text-white text-[38px] font-[900] text-center mb-14'>
+        <h2 className='text-white text-[24px] md:text-[28px] lg:text-[35px] font-[900] text-center mb-14'>
           Start Mirroring in 3 Steps
         </h2>
 
@@ -103,7 +103,7 @@ export const Stats = () => {
 
         {/* ── Trader Rewards Card ── */}
         <div className='mt-20 max-w-[900px] mx-auto'>
-          <h3 className='text-white text-[38px]  font-[900] text-center mb-2'>
+          <h3 className='text-white text-[24px] md:text-[28px] lg:text-[35px]  font-[900] text-center mb-2'>
             Trader Rewards Scale With
             <br />
             Consistency, Not One-Off Wins

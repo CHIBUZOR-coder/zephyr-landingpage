@@ -14,7 +14,7 @@ export default function LandingPage () {
         <div className='header flex justify-between items-center px-4 py-3'>
           <div className='flex items-center gap-3'>
             <span
-            className='bg-center bg-cover h-22 w-22'
+              className='bg-center bg-cover h-22 w-22'
               style={{
                 backgroundImage: `url("/images/zeflogo.png") `
               }}
@@ -24,9 +24,14 @@ export default function LandingPage () {
           </div>
 
           <div className='flex items-center gap-6'>
-            <span className='font-[400] text-[#FFFFFFB3]'>How it works</span>
             <Link
-              to={'https://zephyr-web-sable.vercel.app/'}
+              to={'https://zephyr-web-sable.vercel.app/how_it_works'}
+              className='font-[400] text-[#FFFFFFB3]'
+            >
+              How it works
+            </Link>
+            <Link
+              to={'https://zephyr-web-sable.vercel.app'}
               className='bg-[#006557] text-white  font-[700] px-4 py-2.5 rounded-lg hover:bg-white/90 transition-colors shadow-[0px_0px_28px_rgba(0,101,87,1)]'
             >
               Launch Application

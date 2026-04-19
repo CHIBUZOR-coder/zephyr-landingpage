@@ -16,7 +16,7 @@ export const CTA = () => {
           <div className='absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.08),transparent_70%)]' />
 
           <div className='relative z-10 max-w-md mx-auto'>
-            <h2 className='text-white  text-[32px] lg:text-[42px] font-[900] leading-tight mb-4'>
+            <h2 className='text-white   text-[24px] md:text-[28px] lg:text-[35px] font-[900] leading-tight mb-4'>
               Ready to trade with
               <br />
               the best?
@@ -31,9 +31,9 @@ export const CTA = () => {
               <Link to={"https://zephyr-web-sable.vercel.app/"} className='bg-white text-[#00A991] text-sm font-[900] px-6 py-2.5 rounded-lg hover:bg-white/90 transition-colors'>
                 Launch Application
               </Link>
-              <button className='bg-[#0a2a20]/30 text-white text-sm font-[900] px-6 py-2.5 rounded-lg border border-white/20 hover:bg-[#0a2a20]/40 transition-colors'>
+              <Link to={"https://zephyr-web-sable.vercel.app/docs"} className='bg-[#0a2a20]/30 text-white text-sm font-[900] px-6 py-2.5 rounded-lg border border-white/20 hover:bg-[#0a2a20]/40 transition-colors'>
                 Read Docs
-              </button>
+              </Link>
             </div>
           </div>
         </div>

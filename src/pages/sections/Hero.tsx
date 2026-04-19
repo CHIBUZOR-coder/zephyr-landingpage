@@ -1,7 +1,8 @@
 import { FaArrowRight } from 'react-icons/fa'
-import { FiLock, FiActivity } from 'react-icons/fi'
+import { FiLock } from 'react-icons/fi'
 import { BsBarChart } from 'react-icons/bs'
 import { RiShieldCheckLine } from 'react-icons/ri'
+import { Link } from 'react-router-dom'
 
 export const Hero = () => {
   return (
@@ -29,35 +30,45 @@ export const Hero = () => {
 
       {/* Buttons */}
       <div className='mt-8 flex justify-center items-center gap-4 flex-wrap'>
-        <button className='bg-[#007F6D] font-[700] px-6 py-3 rounded-lg flex items-center  justify-center gap-2 shadow-[0_0_25px_rgba(255,255,255,0.05)] hover:opacity-90 transition text-white'>
+        <Link
+          to={'https://zephyr-web-sable.vercel.app'}
+          className='bg-[#007F6D] font-[700] px-6 py-3 rounded-lg flex items-center  justify-center gap-2 shadow-[0_0_25px_rgba(255,255,255,0.05)] hover:opacity-90 transition text-white'
+        >
           Launch App <FaArrowRight />
-        </button>
+        </Link>
 
-        <button className='bg-[#0f1414] font-[700] border border-[#FFFFFF1A] text-gray-300 px-6 py-3 rounded-lg hover:bg-[#141a1a] transition'>
+        <Link
+          to={'https://zephyr-web-sable.vercel.app/leaderboard'}
+          className='bg-[#0f1414] font-[700] border border-[#FFFFFF1A] text-gray-300 px-6 py-3 rounded-lg hover:bg-[#141a1a] transition'
+        >
           View Top Traders
-        </button>
+        </Link>
       </div>
 
       {/* Feature Cards */}
       <div className='grid grid-cols-2 sm:grid-cols-4 gap-4 mt-16 max-w-[900px] mx-auto'>
         {[
           {
+            id: 1,
             icon: <FiLock />,
             title: 'Non-Custodial',
             desc: 'Your funds never leave your control'
           },
           {
+            id: 2,
             icon: <BsBarChart />,
             title: 'On-Chain Performance',
             desc: 'Every trade verifiable on Solana'
           },
           {
+            id: 3,
             icon: <RiShieldCheckLine />,
             title: 'Enforced Risk Controls',
             desc: 'Max loss & drawdown enforced by contracts'
           },
           {
-            icon: <FiActivity />,
+            id: 4,
+            icon: '/images/trading.svg',
             title: 'Performance-Based Fees',
             desc: 'We earn only when you profit'
           }
@@ -66,13 +77,28 @@ export const Hero = () => {
             key={i}
             className='bg-[#0b1212] border border-[#1a2626] rounded-xl p-5 text-left hover:border-[#00E0B8]/30 transition'
           >
-            <div className='text-[#00E0B8] text-lg mb-3'>{item.icon}</div>
-            <h4 className='text-white text-sm font-[700] mb-1'>
-              {item.title}
-            </h4>
-            <p className='text-[#94A3B8] text-xs leading-relaxed'>
-              {item.desc}
-            </p>
+            {item.id === 4 ? (
+              <>
+      
+                <span  style={{backgroundImage:`url("/images/trading.svg")`}} className='text-[#00E0B8] text-lg mb-3 bg-center bg-cover inline-block h-[10px] w-[18px]'></span>
+                <h4 className='text-white text-sm font-[700] mb-1'>
+                  {item.title}
+                </h4>
+                <p className='text-[#94A3B8] text-xs leading-relaxed'>
+                  {item.desc}
+                </p>
+              </>
+            ) : (
+              <>
+                <div className='text-[#00E0B8] text-lg mb-3'>{item.icon}</div>
+                <h4 className='text-white text-sm font-[700] mb-1'>
+                  {item.title}
+                </h4>
+                <p className='text-[#94A3B8] text-xs leading-relaxed'>
+                  {item.desc}
+                </p>
+              </>
+            )}
           </div>
         ))}
       </div>
