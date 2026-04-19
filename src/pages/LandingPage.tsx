@@ -11,7 +11,6 @@ export default function LandingPage () {
   return (
     <div className='bg-[#050B0B] min-h-screen font-sans '>
       <div className='w-full'>
-        
         <div className='w-full flex justify-center items-center'>
           <div className=' w-full md:w-[70%]'>
             <div className='w-full flex flex-col justify-center '>
@@ -47,11 +46,13 @@ export default function LandingPage () {
         </div>
         <p className='border-b-[1px] border-[#006557] w-full'></p>
       </div>
-      <Hero />
-      <Features />
-      <Stats />
-      <Why />
-      <CTA />
+      <div className='w-ful px-2 md:px-5'>
+        <Hero />
+        <Features />
+        <Stats />
+        <Why />
+        <CTA />
+      </div>
       <Footer />
     </div>
   )

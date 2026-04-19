@@ -1,6 +1,6 @@
 export const Container = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className='max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8'>
+    <div className=' px-2 md:px-5  sm:px-6 lg:px-8'>
       {children}
     </div>
   )

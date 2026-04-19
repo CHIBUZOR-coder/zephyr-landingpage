@@ -3,16 +3,16 @@ import { FiCheckCircle } from 'react-icons/fi'
 
 export const Features = () => {
   return (
-    <section className='py-20'>
+    <section className='py-20 w-full '>
       <Container>
         <div className='w-full flex justify-center items-center'>
           
-          <div className='relative rounded-2xl border border-[#1a2a2a] bg-[#071313] px-3 lg:px-8 py-4 lg:py-8 sm:p-10 overflow-hidden w-full lg:w-[70%] '>
+          <div className='relative rounded-2xl border border-[#1a2a2a] bg-[#071313] px-3 lg:px-8 py-4 lg:py-8 sm:p-10 overflow-hidden w-full lg:w-[70%]'>
             {/* subtle glow */}
             <div className='absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,224,184,0.08),transparent_60%)] pointer-events-none' />
 
             {/* Content */}
-            <div className='relative z-10 max-w-[700px]'>
+            <div className='relative z-10 max-w-[700px] '>
               <h2 className='text-white text-[24px] md:text-[28px] lg:text-[35px] sm:text-2xl font-[700] leading-snug text-center'>
                 Zephyr uses a transparent, performance-based fee model enforced
                 entirely on-chain.
