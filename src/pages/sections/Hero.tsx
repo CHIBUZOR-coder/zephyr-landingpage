@@ -49,7 +49,7 @@ export const Hero = () => {
       </div>
 
       {/* Feature Cards */}
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-16  mx-auto'>
+      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-16 max-w-[900px]   mx-auto'>
         {[
           {
             id: 1,
