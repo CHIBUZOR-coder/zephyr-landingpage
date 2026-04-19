@@ -1,4 +1,4 @@
-import { FaArrowRight } from 'react-icons/fa'
+
 import { FiLock } from 'react-icons/fi'
 import { BsBarChart } from 'react-icons/bs'
 import { RiShieldCheckLine } from 'react-icons/ri'
@@ -36,7 +36,7 @@ export const Hero = () => {
 
           className='bg-[#007F6D] font-[700] px-6 py-3 rounded-lg flex items-center  justify-center gap-2 shadow-[0_0_25px_rgba(255,255,255,0.05)] hover:opacity-90 transition text-white'
         >
-          Launch App <FaArrowRight />
+          Launch App 
         </Link>
 
         <Link
