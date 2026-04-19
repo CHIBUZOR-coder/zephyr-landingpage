@@ -13,7 +13,7 @@ export const Features = () => {
 
             {/* Content */}
             <div className='relative z-10 max-w-[700px] '>
-              <h2 className='text-white text-[24px] md:text-[28px] lg:text-[35px] sm:text-2xl font-[700] leading-snug text-center'>
+              <h2 className='text-white text-[24px] md:text-[28px] lg:text-[30px] sm:text-2xl font-[700] leading-snug text-center'>
                 Zephyr uses a transparent, performance-based fee model enforced
                 entirely on-chain.
               </h2>
