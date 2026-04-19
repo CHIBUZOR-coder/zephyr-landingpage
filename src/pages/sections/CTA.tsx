@@ -28,10 +28,18 @@ export const CTA = () => {
             </p>
 
             <div className='flex items-center justify-center gap-3 flex-wrap'>
-              <Link to={"https://zephyr-web-sable.vercel.app/"} className='bg-white text-[#00A991] text-sm font-[900] px-6 py-2.5 rounded-lg hover:bg-white/90 transition-colors'>
+              <Link
+                target='_blank'
+                to={'https://zephyr-web-sable.vercel.app/'}
+                className='bg-white text-[#00A991] text-sm font-[900] px-6 py-2.5 rounded-lg hover:bg-white/90 transition-colors'
+              >
                 Launch Application
               </Link>
-              <Link to={"https://zephyr-web-sable.vercel.app/docs"} className='bg-[#0a2a20]/30 text-white text-sm font-[900] px-6 py-2.5 rounded-lg border border-white/20 hover:bg-[#0a2a20]/40 transition-colors'>
+              <Link
+                to={'https://zephyr-web-sable.vercel.app/docs'}
+                target='_blank'
+                className='bg-[#0a2a20]/30 text-white text-sm font-[900] px-6 py-2.5 rounded-lg border border-white/20 hover:bg-[#0a2a20]/40 transition-colors'
+              >
                 Read Docs
               </Link>
             </div>

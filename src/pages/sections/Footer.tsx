@@ -1,5 +1,6 @@
 import { FaInstagram, FaDiscord } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
 
 export default function Footer () {
   return (
@@ -36,12 +37,13 @@ export default function Footer () {
               </h3>
               <ul className='space-y-2'>
                 <li>
-                  <a
-                    href='#'
+                  <Link
+                    to={'https://zephyr-web-sable.vercel.app/how_it_works'}
+                    target='_blank'
                     className='text-[#94A3B8] text-[13px] hover:text-white transition-colors duration-150'
                   >
                     How it Works
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

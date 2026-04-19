@@ -32,6 +32,8 @@ export const Hero = () => {
       <div className='mt-8 flex justify-center items-center gap-4 flex-wrap'>
         <Link
           to={'https://zephyr-web-sable.vercel.app'}
+          target = '_blank'
+
           className='bg-[#007F6D] font-[700] px-6 py-3 rounded-lg flex items-center  justify-center gap-2 shadow-[0_0_25px_rgba(255,255,255,0.05)] hover:opacity-90 transition text-white'
         >
           Launch App <FaArrowRight />
@@ -39,6 +41,7 @@ export const Hero = () => {
 
         <Link
           to={'https://zephyr-web-sable.vercel.app/leaderboard'}
+          target='_blank'
           className='bg-[#0f1414] font-[700] border border-[#FFFFFF1A] text-gray-300 px-6 py-3 rounded-lg hover:bg-[#141a1a] transition'
         >
           View Top Traders
